@@ -54,7 +54,7 @@ class Report(models.Model):
     status = models.IntegerField(choices=Status.choices, default=Status.OPEN)
     resolution = models.IntegerField(choices=Resolution.choices, blank=True, null=True)
     fix_version = models.ForeignKey('core.Version', on_delete=models.SET_NULL, blank=True, null=True)
-    affected_versions = models.ManyToManyField('core.Version')
+    affected_versions = models.ManyToManyField('core.Version', related_name='affected_versions')
     project = models.ForeignKey('core.Project', on_delete=models.CASCADE)
     author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
 
