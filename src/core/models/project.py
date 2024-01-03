@@ -1,12 +1,14 @@
 from django.db import models
 
+from core.constants import DEFAULT_PROJECT_IMAGE
+
 
 class Project(models.Model):
     name = models.CharField(max_length=100, unique=True, blank=False, null=False)
     description = models.TextField(blank=False, null=False)
     repository = models.URLField(blank=False, null=False)
     created_at = models.DateTimeField(auto_now_add=True)
-    image_link = models.URLField(blank=False, null=False)
+    image_link = models.URLField(blank=False, null=False, default=DEFAULT_PROJECT_IMAGE)
 
     class Meta:
         ordering = ('name',)
