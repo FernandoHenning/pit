@@ -6,3 +6,5 @@ from ..models import Project
 class ProjectList(ListView):
     model = Project
     context_object_name = 'projects'
+    template_name = 'project/project-list.html'
+
