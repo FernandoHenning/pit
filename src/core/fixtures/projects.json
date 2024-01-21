@@ -5,9 +5,10 @@
         "fields": {
             "name": "Eco Explorers Club",
             "description": "A community platform connecting nature enthusiasts and environmentalists through local hikes, conservation efforts, and educational resources.",
-            "image": "/media/projects/logos/eco_explorers_club.jpg",
-            "created_at": "2022-01-06T00:00:00Z",
-            "updated_at": "2022-01-06T00:00:00Z"
+            "image": "/project/logos/eco_explorers_club.jpg",
+            "repository_url": "https://github.com/",
+            "created_at": "2023-12-06T14:03:37Z",
+            "updated_at": "2022-12-06T17:15:00Z"
         }
     },
     {
@@ -16,9 +17,10 @@
         "fields": {
             "name": "Mindful Munchies",
             "description": "A healthy snack delivery service tailored to meet individual dietary preferences and restrictions while promoting sustainable food practices.",
-            "image": "/media/projects/logos/mindful_munchies.jpg",
-            "created_at": "2022-01-07T00:00:00Z",
-            "updated_at": "2022-01-07T00:00:00Z"
+            "image": "/project/logos/mindful_munchies.jpg",
+            "repository_url": "https://github.com/",
+            "created_at": "2023-12-17T11:00:00Z",
+            "updated_at": "2023-12-17T11:00:00Z"
         }
     },
     {
@@ -27,9 +29,10 @@
         "fields": {
             "name": "Artistic Algorithms",
             "description": "A generative art tool utilizing machine learning algorithms to produce one-of-a-kind visual compositions based on user input and customizable parameters.",
-            "image": "/media/projects/logos/artistic_algorithms.jpg",
-            "created_at": "2022-01-08T00:00:00Z",
-            "updated_at": "2022-01-08T00:00:00Z"
+            "image": "/project/logos/artistic_algorithms.jpg",
+            "repository_url": "https://github.com/",
+            "created_at": "2023-11-08T10:00:00Z",
+            "updated_at": "2024-01-08T15:00:00Z"
         }
     },
     {
@@ -38,9 +41,10 @@
         "fields": {
             "name": "FitFinance",
             "description": "A personal finance tracking application integrating fitness goals and rewards to encourage healthier financial habits and overall well being.",
-            "image": "/media/projects/logos/fitfinance.jpg",
-            "created_at": "2022-01-09T00:00:00Z",
-            "updated_at": "2022-01-09T00:00:00Z"
+            "image": "/project/logos/fitfinance.jpg",
+            "repository_url": "https://github.com/",
+            "created_at": "2024-01-09T15:00:00Z",
+            "updated_at": "2024-01-09T15:00:00Z"
         }
     },
     {
@@ -49,9 +53,10 @@
         "fields": {
             "name": "Language Learning Labs",
             "description": "A language exchange network facilitating real-world conversations between learners from different linguistic backgrounds using video calls and chat features.",
-            "image": "/media/projects/logos/language_learning_labs.jpg",
-            "created_at": "2022-01-10T00:00:00Z",
-            "updated_at": "2022-01-10T00:00:00Z"
+            "image": "/project/logos/language_learning_labs.jpg",
+            "repository_url": "https://github.com/",
+            "created_at": "2024-01-16T11:23:00Z",
+            "updated_at": "2024-01-16T11:24:00Z"
         }
     }
 ]
