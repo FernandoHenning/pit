@@ -1,4 +1,4 @@
-from django.views.generic import ListView, FormView
+from django.views.generic import ListView, FormView, UpdateView
 
 from ..models import Project
 from ..forms import ProjectForm
@@ -22,3 +22,8 @@ class ProjectCreate(FormView):
         return super(ProjectCreate, self).form_valid(form)
 
 
+class UpdateProjectVIew(UpdateView):
+    model = Project
+    fields = ['name', 'description', 'image', 'repository_url']
+    template_name = 'project/update_project.html'
+    success_url = '/projects/'

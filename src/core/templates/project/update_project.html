@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load add_css %}
+{% load static %}
+
+
+{% block content %}
+    <h1>Edit project</h1>
+    <div class="d-none d-md-block">
+        <hr>
+    </div>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <form enctype="multipart/form-data" method="post" action=".">
+            <div class="row gy-3 gx-xl-5">
+                {{ form.non_field_errors }}
+                <div class="col-md order-md-2">
+                    <div class="mb-2">
+                        {{ form.name.errors }}
+                        {{ form.name.label_tag }} *
+                        {{ form.name|add_css:'form-control' }}
+                        <span>{{ form.subject.help_text }}</span>
+                    </div>
+                    <div class="mb-2">
+                        {{ form.description.errors }}
+                        {{ form.description.label_tag }}
+                        {{ form.description|add_css:'form-control textarea-sm' }}
+                        <span>{{ form.subject.help_text }}</span>
+                    </div>
+                </div>
+                <div class="col-md order-md-4">
+                    <div class="mb-2">
+                        {{ form.image.errors }}
+                        {{ form.image.label_tag }} *
+                        <div class="mb-4 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body p-0">
+                                    <img id="selectedImage" src="{{ form.instance.image.url }}"
+                                         alt="{{ form.instance.name }} project image"
+                                         width="300"
+                                    />
+                                    <div class="card-footer">
+                                        <label for="File"
+                                               class="form-label fst-italic text-danger small text-wrap"></label>
+                                        <input type="file" name="image" accept="image/*"
+                                               class="form-control form-control-sm"
+                                               id="id_image">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <span>{{ form.subject.help_text }}</span>
+                        {{ form.repository_url.errors }}
+                        {{ form.repository_url.label_tag }}
+                        {{ form.repository_url|add_css:'form-control' }}
+                        <span>{{ form.subject.help_text }}</span>
+                    </div>
+                </div>
+                {% comment %} BUTTON {% endcomment %}
+            </div>
+            {% csrf_token %}
+            <div class="mt-3 mb-3 justify-content-end">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <button class="btn btn-primary w-100" type="submit">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+{% block extrascripts %}
+    <script src="{% static 'core/js/projects/update-project.js' %}"></script>
+{% endblock %}
